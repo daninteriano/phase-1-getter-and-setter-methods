@@ -19,6 +19,9 @@ class Circle{
         this.radius = variable/(Math.PI * 2)
     }
     set area(variable){
-        this.radius = Math.sqrt(variable * variable)
+        //this.radius = Math.sqrt(variable * variable)
+        //this.radius = Math.sqrt((this.radius * variable) / Math.PI)
+        //his.radius = Math.sqrt(this.radius * this.radius) / Math.PI
+        this.radius = Math.sqrt(variable / Math.PI)
     }
 }
